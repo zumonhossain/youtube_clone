@@ -22,17 +22,11 @@ Home Page
   <!-- Category Navigation -->
   <div class="category-bar">
     <button class="active">All</button>
-    <button>Music</button>
-    <button>Live</button>
-    <button>Gaming</button>
-    <button>News</button>
-    <button>Programming</button>
-    <button>Web Development</button>
-    <button>Python</button>
-    <button>JavaScript</button>
-    <button>Podcasts</button>
-    <button>Recently uploaded</button>
-    <button>Watched</button>
+
+    {% for tag in tag_names %}
+    <button class="category-btn" type="button">{{ tag }}</button>
+    {% endfor %}
+
   </div>
 
 
